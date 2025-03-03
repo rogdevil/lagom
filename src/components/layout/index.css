@@ -1,0 +1,15 @@
+.wrapper {
+  align-items: center;
+  background-color: #f4f2f1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: 100%;
+  justify-content: flex-start;
+  overflow: scroll;
+  padding: 100px 0 0;
+  position: relative;
+  width: 100%;
+  background-color: red;
+}
