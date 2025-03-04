@@ -4,6 +4,7 @@ import React from 'react';
 import SectionOne from './section1';
 import SectionTwo from './section2';
 import SectionThree from './section3';
+import SectionFour from './section4';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </div>
   );
 };
