@@ -1,6 +1,7 @@
 import './section2.css';
 import React from 'react';
 import Logo from '../../assets/images/logo-1.jpg';
+import Logo2 from '../../assets/images/logo-2.jpg';
 
 const SectionTwo = () => {
   return (
@@ -30,7 +31,17 @@ const SectionTwo = () => {
           <p className="lable">Users</p>
         </div>
       </div>
-      <p className="heading-2 mt-8">Explore All products on Lagom</p>
+      <p className="heading-2">Explore All products on Lagom</p>
+      <div className="dark-card">
+        <p className="heading-2">How Should You Tokenize</p>
+        <p className="description">
+          Our Consultants provide end-to-end tokenization services from ideation, execution,
+          fundraise to launch and growth.
+        </p>
+        <div className="img-container">
+          <img src={Logo2} alt="logo-2" />
+        </div>
+      </div>
     </div>
   );
 };

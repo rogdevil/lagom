@@ -77,3 +77,28 @@
   text-align: center;
   width: 100%;
 }
+
+.section2-wrapper .dark-card {
+  background-color: #111111;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 40px;
+}
+.section2-wrapper .dark-card .heading-2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section2-wrapper .dark-card .description {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+.section2-wrapper .dark-card .img-container {
+  margin-top: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+}
