@@ -18,3 +18,33 @@ body,
   overflow: hidden;
   background-color: #f4f2f1;
 }
+
+.heading {
+  font-size: 64px;
+  font-weight: 600;
+  color: #111111;
+  max-width: 800px;
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: normal;
+  line-height: 76.8px;
+}
+
+/* animations */
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

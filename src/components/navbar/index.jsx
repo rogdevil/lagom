@@ -30,7 +30,6 @@ const Navbar = () => {
         <div className="links"></div>
         <div className="btns">
           <OutlinedButton text={'Join Waitlist'} />
-          <FilledButton text={'Contact Us'} />
         </div>
       </nav>
     </div>
