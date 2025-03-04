@@ -1,0 +1,137 @@
+:root {
+  --clr-text: #111;
+  --clr-slide-1: #ff5757;
+  --clr-slide-2: #66ff66;
+  --clr-slide-3: #9797fe;
+  --clr-slide-4: #ff61a8;
+  --clr-slide-5: #66ffff;
+  --clr-slide-6: #ffff66;
+  --clr-slide-7: #ff9244;
+  --item-height: 59px;
+  --total-items: 7;
+  --animation-duration: 14s;
+  --scroll-height: 300px;
+}
+
+.auto-scroll-body {
+  color: var(--clr-text);
+  align-items: center;
+  background-color: var(--token-0b85bf41-9970-464d-96f4-152f236b9294, #f1f0ee);
+  gap: 150px;
+  height: min-content;
+  overflow: visible;
+  padding: 100px 40px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.auto-scroll-body h1 .scroll-arrow {
+  position: absolute;
+  width: 126px;
+  bottom: 16px;
+  left: 49px;
+}
+
+.auto-scroll-body .container {
+  width: 100%;
+  height: calc(var(--scroll-height) + var(--item-height) - 10px);
+  overflow: hidden;
+  display: flex;
+  padding: calc(var(--scroll-height) / 2) 20px;
+  gap: 20px;
+}
+
+.auto-scroll-body h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--clr-text);
+  white-space: nowrap;
+  position: relative;
+}
+
+.auto-scroll-body .scroll-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(calc(var(--item-height) * -2));
+  animation: stepScroll var(--animation-duration) infinite forwards linear;
+}
+
+.auto-scroll-body .scroll-list li {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  white-space: nowrap;
+  color: var(--clr);
+}
+
+@keyframes stepScroll {
+  0%,
+  11.90% {
+    transform: translateY(calc(var(--item-height) * -2));
+  }
+  14.28%,
+  26.19% {
+    transform: translateY(calc(var(--item-height) * -3));
+  }
+  28.57%,
+  40.47% {
+    transform: translateY(calc(var(--item-height) * -4));
+  }
+  42.85%,
+  54.76% {
+    transform: translateY(calc(var(--item-height) * -5));
+  }
+  57.14%,
+  69.04% {
+    transform: translateY(calc(var(--item-height) * -6));
+  }
+  71.42%,
+  83.33% {
+    transform: translateY(calc(var(--item-height) * -7));
+  }
+  85.71%,
+  97.62% {
+    transform: translateY(calc(var(--item-height) * -8));
+  }
+  100% {
+    transform: translateY(calc(var(--item-height) * -9));
+  }
+}
+
+.auto-scroll-body .scroll-window {
+  position: relative;
+}
+
+.auto-scroll-body .scroll-window .fade {
+  position: absolute;
+  inset-inline: 0;
+  height: calc(var(--scroll-height) / 2);
+  background: linear-gradient(to bottom, var(--clr-background), #1e1e1e);
+  z-index: 1;
+  backdrop-filter: saturate(0);
+  pointer-events: none;
+}
+
+.auto-scroll-body .top-fade {
+  top: calc(var(--scroll-height) / 2 * -1);
+}
+
+.auto-scroll-body .bottom-fade {
+  top: 50px;
+  transform: rotate(180deg);
+}
+
+.section2-two {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  max-width: 1240px;
+  width: 100%;
+  padding: 100px 40px;
+  margin: 0 auto;
+}
