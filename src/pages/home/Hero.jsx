@@ -3,8 +3,8 @@ import './hero.css';
 import React, { useEffect, useRef, useState } from 'react';
 
 const Hero = () => {
-  const [size, setSize] = useState('0.9');
-  const sizeRef = useRef('0.9');
+  const [size, setSize] = useState('0.8');
+  const sizeRef = useRef('0.8');
   const MAX = 100;
 
   const handleScroll = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
     } else {
       sizeRef.current = 1;
     }
-    setSize(sizeRef.current * 0.2 + 0.9);
+    setSize(sizeRef.current * 0.2 + 0.8);
   };
 
   useEffect(() => {

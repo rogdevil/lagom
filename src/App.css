@@ -31,6 +31,16 @@ body,
   line-height: 76.8px;
 }
 
+.heading-2 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #111111;
+  max-width: 800px;
+  width: 98%;
+  letter-spacing: normal;
+  line-height: 62.4px;
+}
+
 /* animations */
 .fade-in {
   opacity: 1;
