@@ -3,7 +3,6 @@ import './App.css';
 import About from './pages/about';
 import Home from './pages/home';
 import Layout from './components/layout';
-
 function App() {
   return (
     <Routes>
